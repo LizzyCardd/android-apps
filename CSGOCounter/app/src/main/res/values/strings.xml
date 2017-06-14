@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CS:GO Counter</string>
+    <string name="text_1">Terrorist</string>
+    <string name="score_1">0</string>
+    <string name="text_2">CTerrorist</string>
+    <string name="score_2">0</string>
+    <string name="button_text_1_1">BO3</string>
+    <string name="button_text_1_2">BO1</string>
+    <string name="button_text_1_3">Overtime</string>
+    <string name="button_text_2_1">BO3</string>
+    <string name="button_text_2_2">BO1</string>
+    <string name="button_text_2_3">Overtime</string>
+    <string name="button_text_3">RESET</string>
+</resources>

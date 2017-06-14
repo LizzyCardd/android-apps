@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/csgo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/activity_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context="com.example.alizh.courtcounter.MainActivity">
+
+            <TextView
+                android:id="@+id/textView"
+                android:fontFamily="sans-serif-medium"
+                style="@style/TextStyle_1"
+                android:text="@string/text_1"
+                android:textColor="@color/text_color_1"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/team_t_score"
+                android:fontFamily="sans-serif-light"
+                style="@style/TextStyle_2"
+                android:text="@string/score_1"
+                android:textColor="@color/text_color_1"
+                android:textSize="56sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:onClick="addThreeForTerrorist"
+                style="@style/ButtonStyle"
+                android:text="@string/button_text_1_1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:onClick="addOneForTerrorist"
+                style="@style/ButtonStyle"
+                android:text="@string/button_text_1_2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:onClick="addOneForTerrorist"
+                style="@style/ButtonStyle"
+                android:text="@string/button_text_1_3" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/activity_main2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context="com.example.alizh.courtcounter.MainActivity">
+
+            <TextView
+                android:id="@+id/textViewB"
+                android:fontFamily="sans-serif-medium"
+                style="@style/TextStyle_1"
+                android:text="@string/text_2"
+                android:textColor="@color/text_color_2"
+                 />
+
+            <TextView
+                android:id="@+id/team_ct_score"
+                android:fontFamily="sans-serif-light"
+                style="@style/TextStyle_2"
+                android:text="@string/score_2"
+                android:textColor="@color/text_color_2"
+                 />
+
+            <Button
+                android:id="@+id/buttonB"
+                android:onClick="addThreeForCTerrorist"
+                style="@style/ButtonStyle"
+                android:text="@string/button_text_2_1" />
+
+            <Button
+                android:id="@+id/buttonB2"
+                android:onClick="addOneForCTerrorist"
+                style="@style/ButtonStyle"
+                android:text="@string/button_text_2_2" />
+
+            <Button
+                android:id="@+id/buttonB3"
+                android:onClick="addOneForCTerrorist"
+                style="@style/ButtonStyle"
+                android:text="@string/button_text_2_3" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:onClick="resetScore"
+        android:text="@string/button_text_3" />
+
+
+</RelativeLayout>
